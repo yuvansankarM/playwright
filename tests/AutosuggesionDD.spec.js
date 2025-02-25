@@ -1,6 +1,8 @@
 import { test, expect } from '@playwright/test';
 test ('locator',async({page})=>{
+    await page.waitForTimeout(4000)
  await page.goto("https://www.redbus.in/")
+ await page.waitForTimeout(4000)
 
 
  await page.locator("#src").fill("Chennai");

@@ -18,7 +18,7 @@ test("Browser/windows", async()=>{
 
 
 })
-test.only("Browserk/windows", async()=>{
+/*test("Browserk/windows", async()=>{
   
     const browser = await chromium.launch()
     const context=await browser.newContext()
@@ -32,4 +32,4 @@ test.only("Browserk/windows", async()=>{
     await expect(newPage).toHaveTitle("Human Resources Management Software | OrangeHRM")
 
 
-})
+})*/

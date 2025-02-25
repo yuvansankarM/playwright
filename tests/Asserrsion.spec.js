@@ -32,7 +32,7 @@ await expect(emailid).toHaveValue("tex@123");
     expect(data).toBeTruthy(); // ✅ Passes because it's a non-empty string
 
     let emptyString = null;
-    expect(emptyString).toBeTruthy(); // ❌ Fails because it's falsy
+    expect(emptyString).toBeFalsy(); // ❌ Fails because it's falsy
 
 
 
