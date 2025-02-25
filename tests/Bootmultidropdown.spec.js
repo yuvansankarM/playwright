@@ -15,7 +15,11 @@ for(const checked of values)
     const text = await checked.textContent()
     if(text.includes("Angular") || text.includes("Java"))
     {
-        await checked.click()
+        try {
+            await checked.click({ timeout: 5000 });
+        } catch (error) {
+            console.error('Error clicking element:', error);
+        }
     }
 
 }

@@ -10,7 +10,7 @@ test.beforeEach('Hooks',async({browser})=>{
 
 });
 test.afterEach(async()=>{
-    await page.locator("#//a[@id='logout2']").click()
+    await page.locator("//a[@id='logout2']").click()
     
 
 });

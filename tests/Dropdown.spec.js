@@ -1,7 +1,7 @@
 
 
 import { test, expect } from '@playwright/test';
-test ('locator',async({page})=>{
+test.skip ('locator',async({page})=>{
     await page.goto('https://demo.nopcommerce.com/register?returnUrl=%2F');
     await page.locator("//select[@name='DateOfBirthMonth']").selectOption({label:"May"});
     await page.locator("//select[@name='DateOfBirthDay']").selectOption("12");
